@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sathishdiaries.vercel.app
+
+# Sitemaps
+Sitemap: https://sathishdiaries.vercel.app/sitemap.xml
