@@ -21,11 +21,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <meta name="google-site-verification" content="uvZ3FIqlGxeTrYfKvjDBMVI980FIDsfUvG3Lj0lCvls" />
+       <title>Sathish Diaries</title>
+       <meta name="description" content="Explore Sathish Kumar's personal stories and motivational content." />
+        <meta name="google-site-verification" content="uvZ3FIqlGxeTrYfKvjDBMVI980FIDsfUvG3Lj0lCvls" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex" >
+        <div className="flex justify-around" >
             <Link href="/">Home</Link>
             <div className="flex" >
               <Link href='/about' >About</Link>
