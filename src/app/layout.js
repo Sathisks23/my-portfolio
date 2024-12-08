@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <title>Sathish Diaries</title>
-       <meta name="description" content="Explore Sathish Kumar's personal stories and motivational content." />
+       <meta name="description" content="Sathish blog, personal blog, Sathish Diaries, motivational stories" />
         <meta name="google-site-verification" content="uvZ3FIqlGxeTrYfKvjDBMVI980FIDsfUvG3Lj0lCvls" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
