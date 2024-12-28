@@ -31,7 +31,7 @@ const Login = () => {
         // Store the JWT token in localStorage or cookies
         localStorage.setItem('token', data.token);
         setMessage('Login successful');
-        router.push('user/dashboard'); // Redirect to the dashboard or any other page
+        router.push('/user/dashboard'); // Redirect to the dashboard
       } else {
         setMessage(data.message); // Show error message from API
       }
@@ -43,8 +43,12 @@ const Login = () => {
   return (
     <div className="max-w-md mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Login</h1>
-      
-      {message && message == 'Login successful'?  <p className="mb-4 text-green-500">{message}</p> : <p className="mb-4 text-red-500">{message}</p>}
+
+      {message && (
+        <p className={`mb-4 ${message === 'Login successful' ? 'text-green-500' : 'text-red-500'}`}>
+          {message}
+        </p>
+      )}
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-sm font-semibold mb-2" htmlFor="email">
@@ -78,8 +82,10 @@ const Login = () => {
           Login
         </button>
       </form>
-      <div className='mt-2 pt-2'>
-        <p className='font-light text-ms text-neutral-500'>Don't  have an account <Link className='font-bold text-sky-500' href='/signup'>Sign Up</Link></p> 
+      <div className="mt-2 pt-2">
+        <p className="font-light text-ms text-neutral-500">
+          Don&apos;t have an account? <Link className="font-bold text-sky-500" href="/signup">Sign Up</Link>
+        </p>
       </div>
     </div>
   );
